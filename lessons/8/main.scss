@@ -1,0 +1,64 @@
+// Property Declarations And Placeholder
+%main-box {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+$direction: "top";
+
+.arrow-div {
+  @extend %main-box;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 50px auto;
+  &::before {
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+    @if $direction == "top" {
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      border-bottom-color: red;
+    } @else if $direction == "bottom" {
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      border-top-color: red;
+      -o-transform: translateX(-50%);
+    } @else if $direction == "right" {
+      top: 50%;
+      right: -40px;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      border-left-color: red;
+      -o-transform: translateY(-50%);
+    } @else if $direction == "left" {
+      top: 50%;
+      left: -40px;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      border-right-color: red;
+      -o-transform: translateY(-50%);
+    } @else {
+      @error "This Direction #{$direction} Is Not Valid";
+    }
+  }
+}

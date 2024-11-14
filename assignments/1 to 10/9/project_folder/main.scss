@@ -1,0 +1,8 @@
+// Include vars.scss
+@use "./helpers/vars";
+// Include functions.scss
+@use "./helpers/functions";
+// Include header.scss
+@use "./layout/header";
+// Include footer.scss
+@use "./layout/footer";

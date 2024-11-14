@@ -1,0 +1,18 @@
+// Import the colors file
+@use "./variables/colors" as *;
+
+// Import the fonts file
+@use "./variables/fonts";
+
+.header {
+  color: $alt_color;
+}
+
+.footer {
+  background-color: black;
+  font-size: fonts.$main_font;
+}
+
+.sidebar {
+  background-color: $main_color;
+}

@@ -1,0 +1,16 @@
+// This won't show in css & compressed
+
+/* This will show in CSS but not in compressed */
+/* ! This will show in CSS and in compressed */
+
+$company: "falcon";
+
+/* company name: #{$company} */
+
+/// Function to do .......................
+///
+/// @param {num}
+/// The number to deal with ...............
+///
+/// @return {int}
+/// return ............

@@ -1,0 +1,19 @@
+// .parent + .sibling{
+//     margin: auto;
+//     margin-top: 10px;
+// }
+
+// .parent ~ .last{
+//     padding: 10px;
+// }
+
+.parent {
+  & + .sibling {
+    margin: auto {
+      top: 10px;
+    }
+    & ~ .last {
+      padding: 10px;
+    }
+  }
+}

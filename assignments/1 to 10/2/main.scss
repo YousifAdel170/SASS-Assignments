@@ -1,0 +1,20 @@
+// First Way
+.class {
+  > {
+    .child {
+      padding: 10px;
+    }
+  }
+}
+
+// Second Way
+// .class {
+//   > .child {
+//     padding: 10px;
+//   }
+// }
+
+// Third Way
+// .class > .child {
+//   padding: 10px;
+// }
