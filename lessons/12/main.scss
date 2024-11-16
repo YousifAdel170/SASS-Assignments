@@ -1,0 +1,25 @@
+@for $i from 1 to 10 {
+  .class-to-#{$i + 10} {
+    font-size: #{$i + 10px};
+  }
+}
+@for $i from 1 through 10 {
+  .class-through-#{$i + 10} {
+    font-size: #{$i + 10px};
+  }
+}
+
+$dimensions: 0;
+
+@for $i from 1 through 10 {
+  .circle-#{100 + $dimensions} {
+    width: $dimensions + 100px;
+    height: $dimensions + 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  $dimensions: $dimensions + 100;
+}

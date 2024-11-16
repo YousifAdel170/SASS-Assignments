@@ -1,0 +1,15 @@
+$prefixes: ".", ":-moz-", "::-moz-", ":-ms-input-", "::-webkit-input-";
+
+@mixin placeholder {
+  @each $prefix in $prefixes {
+    &#{$prefix + "placeholder"} {
+      @content;
+    }
+  }
+}
+// Using
+textarea {
+  @include placeholder {
+    color: #777;
+  }
+}

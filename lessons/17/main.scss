@@ -1,0 +1,16 @@
+@use "./helpers/mixins" as *;
+
+.black-overlay {
+  @include overlay(black, 0.5);
+}
+
+@include keyF(fad-in);
+
+@include animF(top-animation) {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100%;
+  }
+}

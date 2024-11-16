@@ -1,0 +1,6 @@
+@use "./mixins" as *;
+.element {
+  &:before {
+    @include arrow("top");
+  }
+}

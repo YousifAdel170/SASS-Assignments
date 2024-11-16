@@ -1,0 +1,22 @@
+@use "./helpers/mixins" as *;
+
+ul.links {
+  @include list-reset;
+}
+
+.circle-100 {
+  @include circle(100px);
+  background-color: red;
+  color: white;
+}
+
+%centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-circle-100 {
+  @include circle(100px);
+  @extend %centering;
+}

@@ -1,0 +1,8 @@
+.element:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  transform: translateX(-50%);
+  top: -40px;
+  border-bottom-color: red;
+}/*# sourceMappingURL=main.css.map */

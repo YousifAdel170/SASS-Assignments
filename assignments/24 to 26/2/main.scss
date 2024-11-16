@@ -1,0 +1,12 @@
+// SASS Code
+@function get-total($elements...) {
+  $sum: 0;
+  @each $element in $elements {
+    $sum: $sum + $element;
+  }
+  @return $sum;
+}
+.box {
+  top: get-total(100, 50, 20);
+  right: get-total(100, 50);
+}

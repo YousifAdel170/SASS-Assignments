@@ -1,0 +1,71 @@
+.red-theme .product {
+  background-color: #eee;
+  border-bottom: 2px solid red;
+}
+.red-theme .title {
+  color: red;
+  font-weight: bold;
+}
+
+.green-theme .product {
+  background-color: #eee;
+  border-bottom: 2px solid green;
+}
+.green-theme .title {
+  color: green;
+  font-weight: bold;
+}
+
+.blue-theme .product {
+  background-color: #eee;
+  border-bottom: 2px solid blue;
+}
+.blue-theme .title {
+  color: blue;
+  font-weight: bold;
+}
+
+.facebook {
+  background-color: "blue";
+  color: white;
+}
+.facebook::before {
+  content: "facebook";
+}
+
+.youtube {
+  background-color: "red";
+  color: white;
+}
+.youtube::before {
+  content: "youtube";
+}
+
+.github {
+  background-color: "black";
+  color: white;
+}
+.github::before {
+  content: "github";
+}
+
+.one {
+  font-size: 20px;
+  color: red;
+  background-color: white;
+  padding: 10px;
+}
+
+.two {
+  font-size: 15px;
+  color: green;
+  background-color: white;
+  padding: 7.5px;
+}
+
+.three {
+  font-size: 22px;
+  color: blue;
+  background-color: white;
+  padding: 11px;
+}/*# sourceMappingURL=main.css.map */
